@@ -507,3 +507,17 @@ Processing WaypointsController#new (for 127.0.0.1 at 2010-11-10 18:49:05) [GET]
 Rendering template within layouts/application
 Rendering waypoints/new
 Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-11 15:51:20) [GET]
+  [4;36;1mWaypoint Load (14.1ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 39ms (View: 19, DB: 14) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-11 15:51:23) [GET]
+  [4;35;1mWaypoint Load (0.6ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 876ms (View: 360, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
