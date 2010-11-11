@@ -1,0 +1,8 @@
+ * capistrano (deployment)
+   PLAN: cap beta deploy
+
+== robustness
+ * hoptoad integration
+
+== features
+ * electronic postcards?

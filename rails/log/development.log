@@ -1,0 +1,509 @@
+# Logfile created on Sat Apr 10 22:19:53 -0700 2010
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-10 22:19:57) [GET]
+  [4;36;1mWaypoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" ):
+  app/controllers/home_controller.rb:4:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (113.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-10 22:20:03) [GET]
+  [4;35;1mWaypoint Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" ):
+  app/controllers/home_controller.rb:4:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 17:48:04) [GET]
+  [4;36;1mWaypoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" ):
+  app/controllers/home_controller.rb:4:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (165.8ms)
+Rendered rescues/_request_and_response (19.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 18:11:46) [GET]
+  [4;36;1mWaypoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: waypoints: SELECT * FROM "waypoints" ):
+  app/controllers/home_controller.rb:4:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (112.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "attachments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "size" integer, "attachable_id" integer, "attachable_type" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "waypoints" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "location" varchar(255), "description" text, "photos" varchar(255), "icon" varchar(255), "created_at" datetime, "updated_at" datetime, "latitude" varchar(255), "longitude" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (33.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100411031940')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100117195126')[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100123204324')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100123231726')[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-12 18:12:57) [GET]
+  [4;36;1mWaypoint Load (0.5ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 53ms (View: 46, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-04-12 18:13:00) [GET]
+  [4;35;1mWaypoint Load (0.4ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#new (for 127.0.0.1 at 2010-04-12 18:13:05) [GET]
+Rendering template within layouts/application
+Rendering waypoints/new
+Completed in 88ms (View: 75, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]
+
+
+Processing WaypointsController#create (for 127.0.0.1 at 2010-04-12 18:13:32) [POST]
+  Parameters: {"commit"=>"Create", "waypoint"=>{"name"=>"Roach", "latitude"=>"", "location"=>"450 Marsh AVE, reno nv 89509", "title"=>"Auburn Statues", "longitude"=>"", "description"=>"None"}, "authenticity_token"=>"8BzR95FzcIkJJ/len3g2kxjAP8VY0u63ldDS83Jm84M="}
+  [4;36;1mWaypoint Create (62.7ms)[0m   [0;1mINSERT INTO "waypoints" ("name", "location", "created_at", "latitude", "title", "photos", "updated_at", "icon", "description", "longitude") VALUES('Roach', '450 Marsh AVE, reno nv 89509', '2010-04-13 01:13:32', 39.5190112, 'Auburn Statues', NULL, '2010-04-13 01:13:32', NULL, 'None', -119.8165062)[0m
+Redirected to http://0.0.0.0:3000/waypoints/1
+Completed in 384ms (DB: 63) | 302 Found [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show (for 127.0.0.1 at 2010-04-12 18:13:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/show
+Completed in 88ms (View: 81, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-04-12 18:13:37) [GET]
+  [4;36;1mWaypoint Load (0.6ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 174ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-04-12 18:13:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1033a7c18>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (152.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-22 00:47:12) [GET]
+  [4;36;1mWaypoint Load (1.2ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 52ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-05-22 00:47:15) [GET]
+  [4;35;1mWaypoint Load (0.6ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 218ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.4ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1033e9fa0>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (158.2ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x103623000>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x103300558>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.5ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1035ddc30>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.4ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1032c5f20>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (135.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.7ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x103570658>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (47.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-22 00:47:41) [GET]
+  [4;36;1mWaypoint Load (0.9ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-05-22 00:47:53) [GET]
+  [4;35;1mWaypoint Load (0.6ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 194ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x10350d170>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (57.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#edit (for 127.0.0.1 at 2010-05-22 00:48:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/edit
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1/edit]
+
+
+Processing WaypointsController#update (for 127.0.0.1 at 2010-05-22 00:48:07) [PUT]
+  Parameters: {"commit"=>"Update", "waypoint"=>{"name"=>"Roach", "location"=>"450 Marsh AVE, reno nv 89509", "title"=>"Auburn Statues", "photos"=>"", "icon"=>"", "description"=>"None"}, "authenticity_token"=>"lNwQWG0NawtpBM1suMgGtNH6yWx+Wx5aXuFUjdKn7IU=", "id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+  [4;35;1mWaypoint Update (0.8ms)[0m   [0mUPDATE "waypoints" SET "updated_at" = '2010-05-22 07:48:07', "icon" = '', "photos" = '' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/waypoints/1
+Completed in 192ms (DB: 1) | 302 Found [http://0.0.0.0/waypoints/1]
+
+
+Processing WaypointsController#show (for 127.0.0.1 at 2010-05-22 00:48:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/show
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-05-22 00:48:11) [GET]
+  [4;35;1mWaypoint Load (0.6ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 190ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-05-22 00:48:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1036e93b8>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (67.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-10 18:35:54) [GET]
+  [4;36;1mWaypoint Load (1.1ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 77ms (View: 52, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:35:58) [GET]
+  [4;35;1mWaypoint Load (1.0ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 755ms (View: 498, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-11-10 18:37:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.4ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1033c7a90>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (127.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-10 18:37:17) [GET]
+  [4;35;1mWaypoint Load (0.6ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:37:23) [GET]
+  [4;36;1mWaypoint Load (0.6ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 268ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#new (for 127.0.0.1 at 2010-11-10 18:40:41) [GET]
+Rendering template within layouts/application
+Rendering waypoints/new
+Completed in 111ms (View: 104, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:40:49) [GET]
+  [4;36;1mWaypoint Load (0.6ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 227ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#edit (for 127.0.0.1 at 2010-11-10 18:40:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/edit
+Completed in 38ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1/edit]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:41:00) [GET]
+  [4;36;1mWaypoint Load (0.6ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 537ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#edit (for 127.0.0.1 at 2010-11-10 18:41:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/edit
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1/edit]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:41:26) [GET]
+  [4;36;1mWaypoint Load (0.6ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 214ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-11-10 18:41:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1032c3360>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (129.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:42:22) [GET]
+  [4;36;1mWaypoint Load (0.7ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 326ms (View: 87, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show to json (for 127.0.0.1 at 2010-11-10 18:43:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+
+NameError (undefined local variable or method `string' for #<Waypoint:0x1035ac388>):
+  app/models/waypoint.rb:24:in `as_json'
+  app/controllers/waypoints_controller.rb:43:in `show'
+  app/controllers/waypoints_controller.rb:40:in `show'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (55.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WaypointsController#new (for 127.0.0.1 at 2010-11-10 18:46:17) [GET]
+Rendering template within layouts/application
+Rendering waypoints/new
+Completed in 103ms (View: 97, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]
+
+
+Processing WaypointsController#create (for 127.0.0.1 at 2010-11-10 18:46:45) [POST]
+  Parameters: {"commit"=>"Create", "waypoint"=>{"name"=>"test point", "latitude"=>"", "location"=>"430 marsh ave, reno nv 89509", "title"=>"test title", "longitude"=>"", "description"=>"test desc"}, "authenticity_token"=>"+4O38mMlSP4YCEtbe68EYeufw2X5oXXNgiLVKgDJkhs="}
+  [4;36;1mWaypoint Create (23.6ms)[0m   [0;1mINSERT INTO "waypoints" ("name", "location", "created_at", "latitude", "title", "photos", "updated_at", "icon", "description", "longitude") VALUES('test point', '430 marsh ave, reno nv 89509', '2010-11-11 02:46:45', 39.5190147, 'test title', NULL, '2010-11-11 02:46:45', NULL, 'test desc', -119.8162429)[0m
+Redirected to http://0.0.0.0:3000/waypoints/2
+Completed in 427ms (DB: 24) | 302 Found [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#show (for 127.0.0.1 at 2010-11-10 18:46:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering waypoints/show
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/waypoints/2]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:46:56) [GET]
+  [4;36;1mWaypoint Load (0.7ms)[0m   [0;1mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 536ms (View: 83, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#edit (for 127.0.0.1 at 2010-11-10 18:47:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWaypoint Load (0.3ms)[0m   [0mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/edit
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1/edit]
+
+
+Processing WaypointsController#update (for 127.0.0.1 at 2010-11-10 18:47:13) [PUT]
+  Parameters: {"commit"=>"Update", "waypoint"=>{"name"=>"Roach", "location"=>"450 Marsh Ave, reno nv 89509", "title"=>"Auburn Statues", "photos"=>"", "icon"=>"", "description"=>"None"}, "authenticity_token"=>"+4O38mMlSP4YCEtbe68EYeufw2X5oXXNgiLVKgDJkhs=", "id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+  [4;35;1mWaypoint Update (0.4ms)[0m   [0mUPDATE "waypoints" SET "updated_at" = '2010-11-11 02:47:13', "location" = '450 Marsh Ave, reno nv 89509' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/waypoints/1
+Completed in 249ms (DB: 1) | 302 Found [http://0.0.0.0/waypoints/1]
+
+
+Processing WaypointsController#show (for 127.0.0.1 at 2010-11-10 18:47:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWaypoint Load (0.3ms)[0m   [0;1mSELECT * FROM "waypoints" WHERE ("waypoints"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering waypoints/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/waypoints/1]
+
+
+Processing WaypointsController#index (for 127.0.0.1 at 2010-11-10 18:47:18) [GET]
+  [4;35;1mWaypoint Load (0.7ms)[0m   [0mSELECT * FROM "waypoints" [0m
+Rendering template within layouts/application
+Rendering waypoints/index
+Completed in 363ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/waypoints]
+
+
+Processing WaypointsController#new (for 127.0.0.1 at 2010-11-10 18:49:00) [GET]
+Rendering template within layouts/application
+Rendering waypoints/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]
+
+
+Processing WaypointsController#new (for 127.0.0.1 at 2010-11-10 18:49:05) [GET]
+Rendering template within layouts/application
+Rendering waypoints/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/waypoints/new]

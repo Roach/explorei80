@@ -1,0 +1,34 @@
+%ul
+  %li= link_to 'Edit', edit_waypoint_path(@waypoint)
+  %li= link_to 'list waypoints', waypoints_path
+
+%p
+  %b Name:
+  =h @waypoint.name
+
+%p
+  %b Title:
+  =h @waypoint.title
+
+%p
+  %b Id:
+  =h @waypoint.id
+
+%p
+  %b Location:
+  =h @waypoint.location
+
+%p== Latitude: #{h @waypoint.latitude}
+%p== Longitude: #{h @waypoint.longitude}
+
+%p
+  %b Description:
+  =h @waypoint.description
+
+%p
+  %b Photos:
+  =h @waypoint.photos
+
+%p
+  %b Icon:
+  =h @waypoint.icon

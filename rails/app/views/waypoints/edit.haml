@@ -1,0 +1,36 @@
+%ul
+  %li= link_to 'Show', @waypoint
+  %li= link_to 'Back', waypoints_path
+
+%h1 Editing waypoint
+
+- form_for(@waypoint) do |f|
+  - unless @waypoint.errors.blank?
+    .error= f.error_messages
+
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name, :class => 'text'
+  %p
+    = f.label :title
+    %br
+    = f.text_field :title, :class => 'text'
+  %p
+    = f.label :location
+    %br
+    = f.text_field :location, :class => 'text'
+  %p
+    = f.label :description
+    %br
+    = f.text_area :description, :class => 'text'
+  %p
+    = f.label :photos
+    %br
+    = f.text_field :photos, :class => 'text'
+  %p
+    = f.label :icon
+    %br
+    = f.text_field :icon, :class => 'text'
+  %p
+    = f.submit 'Update'

@@ -1,0 +1,29 @@
+- content_for :head do
+  = @map.to_html
+
+= @map.div(:width => 900, :height => 450)
+
+#pointmessage
+  #pointtitle
+  #pointdescription
+
+%table.grid_20
+  %tr
+    %th Name
+    %th Title
+    %th Location
+    %th Description
+    %th Photos
+    %th Icon
+    - @waypoints.each do |waypoint|
+      %tr
+        %td= h waypoint.name
+        %td= h waypoint.title
+        %td= link_to_function "#{h waypoint.location}", "panmap(#{waypoint.latitude},#{waypoint.longitude},#{waypoint.id});"
+        %td= h waypoint.description
+        %td= h waypoint.photos
+        %td= h waypoint.icon
+        %td= link_to 'Edit', edit_waypoint_path(waypoint)
+        %td= link_to 'Delete', waypoint, :confirm => 'Are you sure?', :method => :delete
+
+= link_to 'New waypoint', new_waypoint_path

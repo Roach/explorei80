@@ -1,0 +1,47 @@
+%h1 New Waypoint
+
+- form_for(@waypoint) do |f|
+  - unless @waypoint.errors.blank?
+    .error= f.error_messages
+
+  %fieldset.grid_9.alpha
+    %legend Description
+    %p.grid_9
+      = f.label :name
+      %br
+      = f.text_field :name, :class => 'text'
+
+    %p.grid_9
+      = f.label :title
+      %br
+      = f.text_field :title, :class => 'text'
+
+    %p.grid_9
+      = f.label :description
+      %br
+      = f.text_area :description, :class => 'text grid_8'
+
+  %fieldset.grid_9.omega
+    %legend Location
+    %p.grid_9
+      = f.label :location
+      %br
+      = f.text_field :location, :class => 'text'
+
+    .clear
+    %p
+      \-- or --
+
+    %p.grid_3
+      = f.label :latitude
+      %br
+      = f.text_field :latitude, :class => 'text grid_2'
+
+    %p.grid_3
+      = f.label :longitude
+      %br
+      = f.text_field :longitude, :class => 'text grid_2'
+
+  .clear
+  %p.grid_10
+    = f.submit 'Create'

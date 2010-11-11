@@ -1,0 +1,5 @@
+page.insert_html :bottom, 'list',
+                 content_tag("li", "Fox")
+page.visual_effect :highlight, 'list', :duration => 3
+page.replace_html 'header',
+                  'RJS Template Test Complete!'
